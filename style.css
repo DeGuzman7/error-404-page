@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+:root{
+   --heading-color: #333333;
+   --gray-color: #4F4F4F;
+   --white: #FFFFFF;
+   --main-font:'Space Mono', monospace;
+   --font:'Inconsolata', monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--main-font);
+    color: var(--gray-color);
+}
+img{
+    max-width: 100%;
+    margin-top: 3rem;
+}
+
+.container{
+    max-width: 90%;
+    margin:0 auto;
+}
+header{
+    padding-top: 2rem;
+    max-width: 100%;
+    font-family: var(--font);
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    text-transform: uppercase;
+}
+.content{
+    display: grid;
+    gap: 6rem;
+}
+
+.content-text{
+    display: grid;
+    gap: 2rem;
+}
+.content-text h1{
+    font-size: 4.3rem;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+.content-text p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+button{
+    background-color: var(--heading-color);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 2rem;
+    width: 216px;
+    height: 68px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size:1.1rem ;
+    font-weight: 700;
+}
+footer{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+@media(min-width:760px){
+    .content{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+}
+
+@media(min-width:1020px){
+
+img{
+    max-width: 
+    539.22px;
+}
+.content-text h1{
+    font-size: 6.2rem; 
+}
+.content-text p{
+    font-size: 2.5rem;
+    max-inline-size: 381px;
+}
+footer{display: none;}
+
+}
